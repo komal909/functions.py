@@ -1,0 +1,13 @@
+Input:
+def most_frequent(string):
+    d ={}
+    for char in string:
+        keys = d.keys()
+        if char in keys:
+            d[char]=d[char]+1
+        else:
+            d[char]=1
+    return d
+print(most_frequent("mississippi"))
+Output:
+'m': 1 ,'i': 4,'s': 4, 'p': 2
